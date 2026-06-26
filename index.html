@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Jogos Arcade</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Arcade Central 🎮</h1>
+        <p>Escolha um jogo e divirta-se!</p>
+    </header>
+
+    <main class="menu-jogos" id="menu-jogos">
+        <div class="card-jogo" onclick="iniciarJogo('velha')">
+            <h3>Jogo da Velha</h3>
+            <p>O clássico desafio de X contra O.</p>
+        </div>
+        <div class="card-jogo" onclick="iniciarJogo('memoria')">
+            <h3>Jogo da Memória</h3>
+            <p>Encontre os pares de cartas iguais.</p>
+        </div>
+        <div class="card-jogo" onclick="iniciarJogo('adivinha')">
+            <h3>Adivinhe o Número</h3>
+            <p>Tente acertar o número secreto de 1 a 100.</p>
+        </div>
+        <div class="card-jogo" onclick="iniciarJogo('clique')">
+            <h3>Clicker Veloz</h3>
+            <p>Quantos cliques você consegue em 10 segundos?</p>
+        </div>
+    </main>
+
+    <section class="container-jogo hidden" id="container-jogo">
+        <button class="btn-voltar" onclick="voltarAoMenu()">⬅ Voltar ao Menu</button>
+        <div id="area-jogo"></div>
+    </section>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
